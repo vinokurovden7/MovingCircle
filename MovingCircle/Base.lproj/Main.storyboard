@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MovingCircle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QYJ-nH-OIt">
+                                <rect key="frame" x="134.5" y="700" width="145" height="142"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mo7-s1-Vzz">
+                                        <rect key="frame" x="55" y="0.0" width="35" height="34"/>
+                                        <color key="tintColor" systemColor="systemTealColor"/>
+                                        <state key="normal" image="arrow.up.circle.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="upMoveButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nk6-vz-lNZ"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OlL-iX-CWp">
+                                        <rect key="frame" x="0.0" y="54" width="145" height="34"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5L-94-DE7">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="34"/>
+                                                <color key="tintColor" systemColor="systemTealColor"/>
+                                                <state key="normal" image="arrow.left.circle.fill" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="leftMoveButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2GD-Le-OeC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xgx-Ov-xwA">
+                                                <rect key="frame" x="55" y="0.0" width="35" height="34"/>
+                                                <color key="tintColor" systemColor="systemTealColor"/>
+                                                <state key="normal" image="record.circle.fill" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="centeringMoveButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9tQ-W3-vnT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbL-H4-rro">
+                                                <rect key="frame" x="110" y="0.0" width="35" height="34"/>
+                                                <color key="tintColor" systemColor="systemTealColor"/>
+                                                <state key="normal" image="arrow.right.circle.fill" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="rightMoveButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6wO-r2-WOb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLq-kG-HKV">
+                                        <rect key="frame" x="55" y="108" width="35" height="34"/>
+                                        <color key="tintColor" systemColor="systemTealColor"/>
+                                        <state key="normal" image="arrow.down.circle.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="downMoveButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wOU-Rz-Tta"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Центр" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSd-3o-jEO">
+                                <rect key="frame" x="181.5" y="54" width="51" height="24"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JSd-3o-jEO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BXk-Ey-Lhz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QYJ-nH-OIt" secondAttribute="bottom" constant="20" id="J0S-eZ-wuH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QYJ-nH-OIt" secondAttribute="trailing" constant="20" id="der-sS-4nY"/>
+                            <constraint firstItem="QYJ-nH-OIt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hBP-84-sh4"/>
+                            <constraint firstItem="JSd-3o-jEO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ldx-z5-cj9"/>
+                            <constraint firstItem="JSd-3o-jEO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="n44-Pn-QnY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JSd-3o-jEO" secondAttribute="trailing" constant="20" id="vd7-I3-uKp"/>
+                            <constraint firstItem="QYJ-nH-OIt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wd8-0c-1zG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonStack" destination="QYJ-nH-OIt" id="MOe-q4-mQA"/>
+                        <outlet property="centeringMoveButton" destination="Xgx-Ov-xwA" id="lxI-eI-pkO"/>
+                        <outlet property="downMoveButton" destination="QLq-kG-HKV" id="9YY-62-FCW"/>
+                        <outlet property="informationLabel" destination="JSd-3o-jEO" id="jlN-Su-XLo"/>
+                        <outlet property="leftMoveButton" destination="Y5L-94-DE7" id="UZA-WK-HEG"/>
+                        <outlet property="rightMoveButton" destination="DbL-H4-rro" id="46O-9r-OXC"/>
+                        <outlet property="upMoveButton" destination="Mo7-s1-Vzz" id="fW9-SU-Pmh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="108"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.down.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="arrow.left.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="arrow.right.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="arrow.up.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="record.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
